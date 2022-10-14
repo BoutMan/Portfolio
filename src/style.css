@@ -1,0 +1,688 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@1,500&display=swap');
+    src: local(''),
+        url("font/BebasNeue-Regular.ttf") format("truetype")
+        url('font/BebasNeue-Regular.eot')   
+        url('font/BebasNeue-Regular.woff') format("woff")
+        url('font/BebasNeue-Regular.woff2') format("woff2");
+}
+
+
+@font-face {
+    font-family: "Migra Extrabold";
+    src: local(''),
+        url("font/Migra-Extrabold.ttf") format("truetype")
+        url('font/Migra-Extrabold.eot')   
+        url('font/Migra-Extrabold.woff') format("woff")
+        url('font/Migra-Extrabold.woff2') format("woff2");  
+    
+}
+@font-face {
+    font-family: "Playfair Display SemiBold";
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+    src: local(''),
+    url("font/PlayfairDisplay-SemiBoldItalic.ttf") format("truetype")
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+   /* max-width: 100%;
+    overflow-x: hidden;*/
+}
+body {
+  background: rgb(19, 18, 18);
+  width: auto;
+  scroll-behavior: smooth;
+  color: #e6ecf0;
+}
+img{
+    -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+/*-----------------HEADER------------------*/
+.header {
+
+    background: transparent;
+    color: #e6ecf0;
+    position: fixed;
+     display: flex;
+    width: 100%;
+    height:1.7vh;
+    padding: 3vh;  
+    
+    /*border-bottom: 1px solid #e6ecf0;*/
+    z-index: 1;
+
+}
+.name{
+ 
+    font-family: 'Migra ExtraBold','Playfair Display SemiBold', serif;
+    font-size: 2vh;
+    color: #ffffc2;
+}
+.state{  
+    font-size: 2vh;
+    display: flex;
+    font-family: 'Bebas Neue', serif;
+    float: right;
+    margin-left: 2vh;
+}
+.contact-me{    
+    font-family: 'Bebas Neue';
+    font-size: 2vh; 
+    margin-left: auto; 
+    margin-right:7vh;
+    font-size: 2vh;
+}
+.header a{
+    position: relative;
+    color: #e6ecf0;
+    text-decoration: none;
+    letter-spacing:0.5px;
+    padding: 0 10px;
+    
+}
+
+.header a:after{
+    content: "";
+    position: absolute;
+    background-color: #e6ecf0;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+   
+}
+.header a:hover:after{
+    width: 100%; 
+}
+
+.header .name a{
+    position: relative;
+    color: #ffffc2;
+    text-decoration: none;
+    letter-spacing:0.5px;
+    padding: 0 10px;    
+}
+.header .name a:after{ 
+    height: 0px; 
+}
+.header .name a:hover:after{
+    width: 100%; 
+}
+
+
+#ligne{
+    position: sticky;
+    top: 7vh;
+    border-top: 1px solid #e6ecf0;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;  
+} 
+
+
+/*-----------------END HEADER------------------*/
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   
+}
+.parallax #bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/Fragonard,_The_Swing2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+section{
+    padding-left: 9vh;
+    color: #e6ecf0;
+    font-family: 'Bebas Neue';
+}
+section h2{ 
+    font-size: 4vh;
+    color: #ffffc2;
+}
+section p{
+    font-size:4vh;
+    text-transform: uppercase;
+}
+
+/*------------SCROLLBAR-----------*/
+::-webkit-scrollbar {
+    display: none;
+} 
+/*------------ END SCROLLBAR-----------*/
+
+/*------------MAIN-----------*/c
+.main{
+    color: #e6ecf0!important;
+    padding: 2vh; 
+    font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
+    font-size: smaller ;
+    position: relative;
+    top: -7vw;
+}
+.Portfolio{
+    font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
+    
+    position: relative;
+    top: 12vh;
+    padding-left: 7.5vh;
+    font-size: 4vh;
+}
+.and{
+    font-size: 8vh;position: relative;top: 5vh;
+}
+.main h2{
+    font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
+}
+.main_Title{
+    display: flex; 
+    color: #e6ecf0;  
+   
+}
+.ETUDIANT {
+    position: relative;
+    top: 5vh;
+    font-size: 21vh;
+    color: #ffffc2;
+    font-family:'Bebas Neue' ;
+    padding-left: 7vh;
+    line-height: 70%;   
+}
+.main_bio{
+    position: relative;
+    top:-2vw;
+    font-family: 'Bebas Neue', 'Migra Extrabold';   
+    font-size: 5vh;    
+    float: right;
+    right: 4vh;
+    color: #e6ecf0;
+}
+button{
+    color: #ffffc2;
+    background-color: transparent;
+    border-color: #ffffc2;
+    border-radius: 30vh;
+    font-family: 'Bebas Neue', 'Migra Extrabold';   
+    cursor: pointer;
+    font-size: 3vh;
+    border-style: solid;
+    
+}
+.btn{
+    float: right;
+    padding: 1vh 2vh;
+}
+
+.btn:hover{
+   background-color: #ffffc2;
+   color: black;
+   border-color: #ffffc2;
+}
+.joke{
+    text-transform: uppercase;
+    color: #e6ecf0;
+    font-family: 'Bebas Neue';
+    font-size:3vh;
+    position: relative;
+    top: 0; left: 155vh;  
+}
+.arrow{
+    position: relative;
+    height: auto;
+    width: 20vh;
+    top: 20vh; left: 168vh;
+    transform: rotate(-30deg);
+}
+
+
+.split-text{
+    width: 1000px;
+    position: static;
+}
+
+.date{
+    position: relative;
+    top: 30%;
+    left: 60%;
+    font-size: 20vh;
+}
+.date2{
+    position: relative;
+    top: 30%;
+    left: 58%;
+    font-size: 6vh;
+}
+.dispo{
+    position: relative;
+    left:61%;top: 14vh;
+    font-size: 2.5vh;
+    color: #e6ecf0;
+    font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
+}
+
+.p1{
+    width: 700px;
+}
+
+
+/*------------END MAIN-----------*/
+/*------------SECOND MAIN-----------*/
+.projects{
+    padding-top: 30vh;
+    
+}
+.projects img{
+   position: absolute;
+    width: 38vw;
+    height: 25vh;
+   float: right;
+   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+    -webkit-transform: scale(1);
+	transform: scale(1);
+    
+}
+.projects img:hover{
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(0%);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+   /* width: 36vw;
+    height:24vh;*/
+    -webkit-transform: scale(0.98);
+	transform: scale(0.98);
+    
+}
+ 
+.project1{
+    width: 105vh;
+  /*  border: 4px solid red;*/
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.project1 h1{
+    float: left;
+    font-size: 6vh;
+    padding-top: 4vh; 
+    -webkit-text-stroke: 0.5px #e6ecf0;
+    color: transparent;
+    
+}
+
+.project2{
+    width: 108vh;
+  /*  border: 4px solid red;*/
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.project2 img{
+   float: left;
+   width: auto;
+   position: relative;
+
+}
+.project2 h1{
+    float: right;
+    font-size: 6vh;
+    padding-top: 4vh; 
+    -webkit-text-stroke: 0.5px #e6ecf0;
+    color: transparent;
+    
+}
+
+.dot {
+    height: 110vh;
+    width: 110vh;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #e6ecf0;
+    display: inline-block;
+    position: absolute;
+    left: -28vw;top: 200vh;
+    z-index: -1;
+    border-width: 0.1px;
+  }
+  /*------------END SECOND MAIN-----------*/
+
+/*------------interest-----------*/
+.parallax2 {
+    font-family: 'Bebas Neue', 'Migra Extrabold';  
+    position: relative;
+    padding-left: 9vh;
+    width: auto;
+    height:113%;
+    overflow: visible;
+    z-index: -2;
+}
+.parallax2 #bg2{
+     position: absolute;
+    top: 4vh;
+    width: 100%;
+    height: 96.5%;
+    background: url(images/frag4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+
+.interest{
+    padding-top: 30vh;
+   text-transform: uppercase;
+}
+
+.interest h1{
+    color: #ffffc2;
+    font-size: 4vh;
+    padding-left: 10%;
+}
+  .testIt {
+    width: 10vw;
+    height: 3vh;
+    overflow: hidden;
+    line-height:90%;
+    
+    position: relative;
+    color: #e6ecf0;
+    background-color: transparent;
+    border-color: #ffffc2;
+    border-radius: 30vh;
+    font-family: 'Bebas Neue', 'Migra Extrabold';   
+    
+    font-size: 4vh;
+    border-style: solid;
+    padding: 1vh 1vh;
+  }
+  .testIt span {
+    position: absolute;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transform: translateX(0);
+    transition: 4s;
+  } 
+  .testIt span:hover {
+    transform: translateX(calc(200px - 100%));
+  }
+
+
+  .interest1{
+    position: relative;
+    left: 50vh;
+  }
+  .interest1 .testIt{
+    width: 8.1vw;
+    height: 3vh;
+  }
+
+  .interest2{
+    position: relative;
+    left: 69.5vh; top: -5.6vh;
+  }
+  .interest2 .testIt{
+    width: 16.7vw;
+    height: 3vh;
+  }
+
+  .interest3{
+    position: relative;
+    left: 55vh;top: -5vh;
+  }
+  .interest3 .testIt{
+    width: 16.5vw;
+    height: 3vh;
+  }
+
+  .interest4{
+    position: relative;
+    left: 91vh;top: -10.5vh;
+  }
+  .interest4 .testIt{
+    width: 12.5vw;
+    height: 3vh;
+  }
+
+  .interest5{
+    position: relative;
+    left: 40vh;top: -10vh;
+  }
+  .interest5 .testIt{
+    width: 9vw;
+    height: 3vh;
+  }
+
+  .interest6{
+    position: relative;
+    left: 61vh;top: -15.5vh;
+  }
+  .interest6 .testIt{
+    width: 3.4vw;
+    height: 3vh;
+  }
+
+  .interest7{
+    position: relative;
+    left: 71vh;top: -21.2vh;
+  }
+  .interest7 .testIt{
+    width: 9.5vw;
+    height: 3vh;
+  }
+/*------------end interest-----------*/
+
+/*------------CONTACT-----------*/
+.contact{
+position: relative;
+font-family: 'Bebas Neue', 'Migra Extrabold';  
+top: -30vh;
+ text-transform: uppercase;
+ color: #e6ecf0;
+ padding-left: 4vh;
+}
+.contact h1{
+    font-size: 25vh; 
+    line-height: 20vh;
+    margin-bottom: 0;
+}
+.contact a{
+    color: #e6ecf0;
+    text-decoration: none;
+    padding-left: 4vh;
+    
+}
+.contact a:hover{
+    color: #ffffc2;
+    text-decoration: underline;
+    padding-left: 4vh;
+    
+}
+.merci{
+    position: relative;
+    font-size: 3vh;
+    float: right;
+    margin-right: 7vw;
+}
+
+
+.ligne2{
+   position: relative;
+  
+    border-top: 1px solid #e6ecf0;
+
+    margin-top: -10vh;
+   
+    margin-left: 50vh;
+    margin-right: 0; 
+
+    padding: 3vh;
+    font-size: 3vh;
+} 
+/*------------END CONTACT-----------*/
+
+/*------------text reveal-----------*/
+[class*="reveal-"]{
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
+.reveal-2{
+   transition-delay: 0.5s;
+}
+
+/*------------end text reveal-----------*/
+
+/*responsiv pour laptop*/
+@media only screen and (max-width: 725px) {
+    .date{
+        font-size: 10vh;
+    }
+    .date2{
+        font-size: 10vh;
+    }
+}
+
+/*responsiv pour téléphone*/
+@media only screen and (max-width: 500px) {
+    body{
+        width: auto;
+    }
+  .ETUDIANT{
+    font-size: 5vh;
+    top: -2vh;
+    left: -4vh;
+  }
+
+  .header {
+    padding: 2vh;  
+}
+.name{
+    font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
+    font-size: 1vh;
+    color: #ffffc2;
+}
+.state{  
+    font-size: 1vh;
+    margin-left: 1vh;
+}
+.contact-me{    
+    font-size: 2vh; 
+    margin-left: auto; 
+    margin-right:1vh;
+    font-size: 2vh;
+    float: left;
+}
+#ligne{
+    top: 3.5vh;
+}
+
+.date{
+    font-size: 8vh;
+    top: 10%;
+    left: 60%;
+}
+.date2{
+    font-size: 2vh;
+    top: 10%;
+    left: 57%;
+}
+.Portfolio{
+    top: 2vh;
+    padding-left: 3vh;
+    font-size: 2vh;
+}
+.and{
+    font-size: 2vh;position: relative;top: -2vh;left: -4vh;
+}
+.dispo{
+    left:61%;top: 3vh;
+    font-size: 1vh;
+}
+
+.main_bio{
+    top:-2vw;
+    font-size: 2vh;    
+}
+button{
+    font-size: 1vh;
+}
+.btn{
+    padding: 1vh 1vh;
+}
+
+.sketchfab-embed-wrapper{
+    opacity: 0;z-index: -6;
+}
+
+.p1{
+    font-size: 2vh;
+    width: 300px;
+}
+.bio2{
+    position: relative;
+    top: -125vh;
+}
+.dot {
+    height: 60vh;
+    width: 60vh;
+    left: -80vw;top: -1vh;
+  }
+
+  .projects{
+    padding-top: 3vh;
+    position: relative;top: -125vh;
+    
+}
+.projects img{
+    width: 40vw;
+    height: 10vh;  
+}
+.projects h1{
+    font-size: 3vh;
+}
+.project1{
+    width: auto;
+
+}
+}
+ 
