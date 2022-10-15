@@ -2,20 +2,25 @@
     font-family: "Bebas Neue";
     src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     src: local(''),
-        url("font/BebasNeue-Regular.ttf") format("truetype")
-        url('font/BebasNeue-Regular.eot')   
-        url('font/BebasNeue-Regular.woff') format("woff")
+        url("font/BebasNeue-Regular.ttf") format("truetype"),
+        url('font/BebasNeue-Regular.eot'),  
+        url('font/BebasNeue-Regular.woff') format("woff"),
         url('font/BebasNeue-Regular.woff2') format("woff2");
 }
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @font-face {
     font-family: "Migra Extrabold";
+    src:url(042c8296366ef429f744.eot);
     src: local(''),
         url("font/Migra-Extrabold.ttf") format("truetype")
         url('font/Migra-Extrabold.eot')   
-        url('font/Migra-Extrabold.woff') format("woff")
-        url('font/Migra-Extrabold.woff2') format("woff2");  
+        url('font/Migra-Extrabold.woff') format("woff"),
+        url('font/Migra-Extrabold.woff2') format("woff2"), 
+        url(042c8296366ef429f744.eot?#iefix) format("embedded-opentype"),
+        url(5f6a68c6046cfa976287.woff2) format("woff2"),
+        url(378c36c4ce49ea496b29.woff) format("woff"),
+        url(c562a1ecee182460a3b5fcfd212af76c.svg#Migra-Semibold) format("svg");
     
 }
 @font-face {
@@ -782,3 +787,12 @@ button{
     
 }
  
+@font-face{
+    font-family:"Migra";
+    src:url(042c8296366ef429f744.eot);
+    src:
+    url(042c8296366ef429f744.eot?#iefix) format("embedded-opentype"),
+    url(5f6a68c6046cfa976287.woff2) format("woff2"),
+    url(378c36c4ce49ea496b29.woff) format("woff"),
+    url(c562a1ecee182460a3b5fcfd212af76c.svg#Migra-Semibold) format("svg");
+}
