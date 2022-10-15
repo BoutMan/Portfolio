@@ -505,7 +505,7 @@ button{
 .contact{
 position: relative;
 font-family: 'Bebas Neue', 'Migra Extrabold';  
-top: -14vh;
+top: -26vh;
  text-transform: uppercase;
  color: #e6ecf0;
  padding-left: 4vh;
@@ -547,7 +547,14 @@ top: -14vh;
 
     padding: 3vh;
     font-size: 3vh;
+    
 } 
+.call_to_action{
+    position: relative;
+    top: -19vh;
+   left:35%;
+    font-size: 7vh;color: #ffffc2;
+}
 /*------------END CONTACT-----------*/
 
 /*------------text reveal-----------*/
@@ -565,11 +572,7 @@ top: -14vh;
 .reveal-2{
    transition-delay: 0.5s;
 }
-.call_to_action{
-    position: relative;
-   margin-right:50%;
-    font-size: 4vh;color: #ffffc2;
-}
+
 /*------------end text reveal-----------*/
 
 /*responsiv pour laptop*/
