@@ -2,30 +2,26 @@
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
-    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@1,500&display=swap');
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
     src: local(''),
         url("font/BebasNeue-Regular.ttf") format("truetype")
         url('font/BebasNeue-Regular.eot')   
         url('font/BebasNeue-Regular.woff') format("woff")
         url('font/BebasNeue-Regular.woff2') format("woff2");
 }
-
-
 @font-face {
     font-family: "Migra Extrabold";
     src: local(''),
         url("font/Migra-Extrabold.ttf") format("truetype")
         url('font/Migra-Extrabold.eot')   
         url('font/Migra-Extrabold.woff') format("woff")
-        url('font/Migra-Extrabold.woff2') format("woff2");  
-    
+        url('font/Migra-Extrabold.woff2') format("woff2");    
 }
 @font-face {
     font-family: "Playfair Display SemiBold";
     src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
     src: local(''),
-    url("font/PlayfairDisplay-SemiBoldItalic.ttf") format("truetype")
-  
+    url("font/PlayfairDisplay-SemiBoldItalic.ttf") format("truetype") 
 }
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -762,18 +758,22 @@ button{
         line-height: 9vh;
         margin-bottom: 0;
     }
+    .contact a{
+       font-size: 2vh;
+        
+    }
 
     .ligne2{
         position: relative;
-       
+       left: 7vh;
          border-top: 1px solid #e6ecf0;
      
-         margin-top: -10vh;
+         margin-top: -7vh;
         
-         margin-left: 50vh;
+         margin-left: 10vh;
          margin-right: 0; 
      
-         padding: 3vh;
+        
          font-size: 3vh;
      } 
 }
