@@ -43,7 +43,7 @@
 
 }
 .name{
-    font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
+    font-family: 'Playfair Display SemiBold', serif;
     font-size: 2vh;
     color: #ffffc2;
 }
@@ -146,7 +146,7 @@ img{
 }
 
 .anotation{
-    font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
+    font-family: 'Playfair Display SemiBold', serif;
     color: #ffffc2;
     font-size: 2.5vh;
     
@@ -213,7 +213,7 @@ img{
 display: flex;
 }
 .titre1 h1{
-    font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
+    font-family: 'Playfair Display SemiBold', serif;
     }
 .titre1 p{
    padding-top: 3.5vh;
@@ -249,7 +249,7 @@ margin-right: 5vh;
     
 }
 .titre2 h1{
-    font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
+    font-family: 'Playfair Display SemiBold', serif;
     
     }
 .titre2 p{

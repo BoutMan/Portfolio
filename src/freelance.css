@@ -63,7 +63,7 @@ body{
 
 }
 .name{
-    font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
+    font-family: 'Playfair Display SemiBold', serif;
     font-size: 2vh;
     color: #ffffc2;
 }
@@ -183,7 +183,7 @@ img{
  }
  .p2_joke{
     color: #ffffc2;
-    font-family: 'Migra Extrabold','Playfair Display SemiBold', serif,'Bebas Neue';
+    font-family: 'Playfair Display SemiBold', serif,'Bebas Neue';
     position: relative;
     top: -4vh;
     font-size: 2vh;
