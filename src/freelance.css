@@ -1,31 +1,29 @@
 @font-face {
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@1,500&display=swap');
+    font-family: "Bebas Neue";
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     src: local(''),
-        url("font/BebasNeue-Regular.ttf") format("truetype")
-        url('font/BebasNeue-Regular.eot')   
-        url('font/BebasNeue-Regular.woff') format("woff")
+        url("font/BebasNeue-Regular.ttf") format("truetype"),
+        url('font/BebasNeue-Regular.eot'),  
+        url('font/BebasNeue-Regular.woff') format("woff"),
         url('font/BebasNeue-Regular.woff2') format("woff2");
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @font-face {
     font-family: "Migra Extrabold";
     src: local(''),
         url("font/Migra-Extrabold.ttf") format("truetype")
         url('font/Migra-Extrabold.eot')   
-        url('font/Migra-Extrabold.woff') format("woff")
-        url('font/Migra-Extrabold.woff2') format("woff2");  
+        url('font/Migra-Extrabold.woff') format("woff"),
+        url('font/Migra-Extrabold.woff2') format("woff2"), 
+
     
 }
 @font-face {
     font-family: "Playfair Display SemiBold";
     src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
     src: local(''),
-    url("font/PlayfairDisplay-SemiBoldItalic.ttf") format("truetype")
-  
+    url("font/PlayfairDisplay-SemiBoldItalic.ttf") format("truetype") 
 }
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
 
@@ -65,7 +63,7 @@ body{
 
 }
 .name{
-    font-family: 'Migra Extrabold';
+    font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
     font-size: 2vh;
     color: #ffffc2;
 }
@@ -185,7 +183,7 @@ img{
  }
  .p2_joke{
     color: #ffffc2;
-    font-family: 'Migra Extrabold','Bebas Neue';
+    font-family: 'Migra Extrabold','Playfair Display SemiBold', serif,'Bebas Neue';
     position: relative;
     top: -4vh;
     font-size: 2vh;
