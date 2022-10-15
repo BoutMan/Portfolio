@@ -5,17 +5,11 @@
     src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
     src: local(''),
         url("font/BebasNeue-Regular.ttf") format("truetype")
-        url('font/BebasNeue-Regular.eot')   
-        url('font/BebasNeue-Regular.woff') format("woff")
-        url('font/BebasNeue-Regular.woff2') format("woff2");
 }
 @font-face {
     font-family: "Migra Extrabold";
     src: local(''),
         url("font/Migra-Extrabold.ttf") format("truetype")
-        url('font/Migra-Extrabold.eot')   
-        url('font/Migra-Extrabold.woff') format("woff")
-        url('font/Migra-Extrabold.woff2') format("woff2");    
 }
 @font-face {
     font-family: "Playfair Display SemiBold";
