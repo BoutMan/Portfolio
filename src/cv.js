@@ -39,7 +39,7 @@ document.querySelectorAll('[class*="reveal-"]').forEach(function (r){
 //script pour le parallax   
 var headerBg = document.getElementById('bg')
     window.addEventListener('scroll', function(){
-        headerBg.style.opacity = 1 - +window.pageYOffset/400+''
+        headerBg.style.opacity = 1 - +window.pageYOffset/1500+''
         headerBg.style.top= +window.pageYOffset+'px'
         headerBg.style.backgroundPositionY=- +window.pageYOffset *1.5+'px'
     })
