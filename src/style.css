@@ -262,12 +262,6 @@ button{
     transform: rotate(-30deg);
 }
 
-
-.split-text{
-    width: 1000px;
-    position: static;
-}
-
 .date{
     position: relative;
     top: 26%;
@@ -289,7 +283,7 @@ button{
 }
 
 .p1{
-    width: 700px;
+    width: 70vw;
 }
 
 
