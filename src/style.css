@@ -44,11 +44,14 @@ html, body {
    /* max-width: 100%;
     overflow-x: hidden;*/
 }
+* {
+    /*outline: 1px solid #f00 !important;*/
+  }
 body {
   background: rgb(19, 18, 18);
   width: auto;
   scroll-behavior: smooth;
-  color: #e6ecf0;
+  color: #e6ecf0; 
 }
 img{
     -webkit-user-drag: none;
@@ -58,21 +61,17 @@ img{
 }
 /*-----------------HEADER------------------*/
 .header {
-
     background: transparent;
     color: #e6ecf0;
     position: fixed;
-     display: flex;
-    width: 100%;
+    display: flex;
+    width: 100vw;
     height:1.7vh;
-    padding: 3vh;  
-    
+    padding: 3vh;     
     /*border-bottom: 1px solid #e6ecf0;*/
     z-index: 1;
-
 }
 .name{
- 
     font-family: 'Migra ExtraBold','Playfair Display SemiBold', serif;
     font-size: 2vh;
     color: #ffffc2;
@@ -89,17 +88,15 @@ img{
     font-size: 2vh; 
     margin-left: auto; 
     margin-right:7vh;
-    font-size: 2vh;
+    font-size: 2vh;  
 }
 .header a{
     position: relative;
     color: #e6ecf0;
     text-decoration: none;
     letter-spacing:0.5px;
-    padding: 0 10px;
-    
+    padding: 0 10px;   
 }
-
 .header a:after{
     content: "";
     position: absolute;
@@ -108,13 +105,11 @@ img{
     width: 0%;
     left: 0;
     bottom: -10px;
-    transition: 0.3s;
-   
+    transition: 0.3s;  
 }
 .header a:hover:after{
     width: 100%; 
 }
-
 .header .name a{
     position: relative;
     color: #ffffc2;
@@ -144,20 +139,19 @@ img{
 .parallax {
     position: relative;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-   
+    height: 100%;  
 }
 .parallax #bg{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+   height: 100vh;
     background: url(images/Fragonard,_The_Swing2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: -6;
+    
 }
 section{
     padding-left: 9vh;
@@ -193,7 +187,6 @@ section p{
 }
 .Portfolio{
     font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
-    
     position: relative;
     top: -3vh;
     padding-left: 7.5vh;
@@ -207,8 +200,7 @@ section p{
 }
 .main_Title{
     display: flex; 
-    color: #e6ecf0;  
-   
+    color: #e6ecf0;     
 }
 .ETUDIANT {
     position: relative;
@@ -236,14 +228,12 @@ button{
     font-family: 'Bebas Neue', 'Migra Extrabold';   
     cursor: pointer;
     font-size: 3vh;
-    border-style: solid;
-    
+    border-style: solid;    
 }
 .btn{
     float: right;
     padding: 1vh 2vh;
 }
-
 .btn:hover{
    background-color: #ffffc2;
    color: black;
@@ -256,6 +246,7 @@ button{
     font-size:3vh;
     position: relative;
     top: 0; left: 155vh;  
+    width: 10vw;
 }
 .arrow{
     position: relative;
@@ -264,7 +255,6 @@ button{
     top: 20vh; left: 168vh;
     transform: rotate(-30deg);
 }
-
 .date{
     position: relative;
     top: 26%;
@@ -278,51 +268,51 @@ button{
     font-size: 6vh;
 }
 .dispo{
+    width: 20vw;
     position: relative;
     left:61%;top: 14vh;
     font-size: 2.5vh;
+    right: auto;
     color: #e6ecf0;
     font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
 }
-
-.p1{
-    width: 70vw;
+.bio2{
+    position: relative;
+    width: 60vw;
+    font-family: 'Bebas Neue';
+    font-size: 4vh;
+    padding-left: 4vw;
 }
-
-
+.bio2 h2{
+   color: #ffffc2;
+}
 /*------------END MAIN-----------*/
 /*------------SECOND MAIN-----------*/
 .projects{
-    padding-top: 30vh;
-    
+    padding-top: 30vh;   
 }
 .projects img{
-   position: absolute;
+    position: absolute;
     width: 38vw;
     height: 25vh;
-   float: right;
-   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-  -webkit-transition: .3s ease-in-out;
+    float: right;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-
     -webkit-transform: scale(1);
-	transform: scale(1);
-    
+    transform: scale(1); 
 }
 .projects img:hover{
     -webkit-filter: grayscale(100%); 
     filter: grayscale(0%);
     -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-
    /* width: 36vw;
     height:24vh;*/
     -webkit-transform: scale(0.98);
-	transform: scale(0.98);
-    
+	transform: scale(0.98);  
 }
- 
 .project1{
     width: 105vh;
   /*  border: 4px solid red;*/
@@ -335,10 +325,8 @@ button{
     font-size: 6vh;
     padding-top: 4vh; 
     -webkit-text-stroke: 0.5px #e6ecf0;
-    color: transparent;
-    
+    color: transparent; 
 }
-
 .project2{
     width: 108vh;
   /*  border: 4px solid red;*/
@@ -350,17 +338,14 @@ button{
    float: left;
    width: auto;
    position: relative;
-
 }
 .project2 h1{
     float: right;
     font-size: 6vh;
     padding-top: 4vh; 
     -webkit-text-stroke: 0.5px #e6ecf0;
-    color: transparent;
-    
+    color: transparent;  
 }
-
 .dot {
     height: 110vh;
     width: 110vh;
@@ -372,23 +357,22 @@ button{
     left: -28vw;top: 200vh;
     z-index: -1;
     border-width: 0.1px;
-  }
-  /*------------END SECOND MAIN-----------*/
+}
+/*------------END SECOND MAIN-----------*/
 
 /*------------interest-----------*/
 .parallax2 {
     font-family: 'Bebas Neue', 'Migra Extrabold';  
     position: relative;
     padding-left: 9vh;
-    width: auto;
+   
     height:113%;
-    overflow: visible;
     z-index: -2;
 }
 .parallax2 #bg2{
      position: absolute;
     top: 4vh;
-    width: 100%;
+    width: 95.6%;
     height: 96.5%;
     background: url(images/frag4.jpg);
     background-size: 100%;
@@ -436,7 +420,7 @@ button{
   }
   .interest1{
     position: relative;
-    left: 50vh;
+    left: 50vh;width: 20vw;
   }
   .interest1 .testIt{
     width: 8.1vw;
@@ -445,7 +429,7 @@ button{
 
   .interest2{
     position: relative;
-    left: 69.5vh; top: -5.6vh;
+    left: 69.5vh; top: -5.6vh;width: 20vw;
   }
   .interest2 .testIt{
     width: 16.7vw;
@@ -454,7 +438,7 @@ button{
 
   .interest3{
     position: relative;
-    left: 55vh;top: -5vh;
+    left: 55vh;top: -5vh;width: 20vw;
   }
   .interest3 .testIt{
     width: 16.5vw;
@@ -463,7 +447,7 @@ button{
 
   .interest4{
     position: relative;
-    left: 91vh;top: -10.5vh;
+    left: 91vh;top: -10.5vh;width: 20vw;
   }
   .interest4 .testIt{
     width: 12.5vw;
@@ -472,7 +456,7 @@ button{
 
   .interest5{
     position: relative;
-    left: 40vh;top: -10vh;
+    left: 40vh;top: -10vh;width: 20vw;
   }
   .interest5 .testIt{
     width: 9vw;
@@ -481,7 +465,7 @@ button{
 
   .interest6{
     position: relative;
-    left: 61vh;top: -15.5vh;
+    left: 61vh;top: -15.5vh;width: 20vw;
   }
   .interest6 .testIt{
     width: 3.4vw;
@@ -490,7 +474,7 @@ button{
 
   .interest7{
     position: relative;
-    left: 71vh;top: -21.2vh;
+    left: 71vh;top: -21.2vh;width: 20vw;
   }
   .interest7 .testIt{
     width: 9.5vw;
@@ -548,9 +532,11 @@ top: -26vh;
 } 
 .call_to_action{
     position: relative;
-    top: -19vh;
+    width: 50vw;
+    top: 20vh;
    left:35%;
     font-size: 7vh;color: #ffffc2;
+    right: 35%;
 }
 /*------------END CONTACT-----------*/
 
@@ -586,6 +572,14 @@ top: -26vh;
 @media only screen and (max-width: 500px) {
     body{
         width: auto;
+        
+    overflow-x: hidden;
+    }
+    .html{
+        position: relative;
+min-width: 896px;
+min-height: 414px;
+height: 100%;
     }
   .ETUDIANT{
     font-size: 5vh;
@@ -594,7 +588,8 @@ top: -26vh;
   }
 
   .header {
-    padding: 2vh;  
+    padding: 2vh; 
+ 
 }
 .name{
     font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
@@ -606,11 +601,7 @@ top: -26vh;
     margin-left: 1vh;
 }
 .contact-me{    
-    font-size: 2vh; 
-    margin-left: auto; 
-    margin-right:1vh;
-    font-size: 2vh;
-    float: left;
+    font-size: 1vh; 
 }
 #ligne{
     top: 3.5vh;
@@ -640,7 +631,7 @@ top: -26vh;
 }
 
 .main_bio{
-    top:-2vw;
+    top:2vh;
     font-size: 2vh;    
 }
 button{
@@ -657,10 +648,11 @@ button{
 .p1{
     font-size: 2vh;
     width: 300px;
+    
 }
 .bio2{
     position: relative;
-    top: -125vh;
+    top: -70vh;
 }
 .dot {
     height: 60vh;
@@ -670,7 +662,7 @@ button{
 
   .projects{
     padding-top: 3vh;
-    position: relative;top: -125vh;
+    position: relative;top: -70vh;
     
 }
 .projects img{
@@ -716,10 +708,15 @@ button{
 
     padding: 0.5vh 0.5vh;
   }
+  .call_to_action{
+    font-size: 4vh;
+    top: -125vh;
+    left: 2%;
+  }
 
 .interest{
     position: relative;
-    top: -150vh;
+    top: -60vh;
    text-transform: uppercase;
 
 }
@@ -755,7 +752,7 @@ button{
 
   .contact{
     position: relative; left: -10vh;
-    top: -170vh;
+    top: -90vh;
     }
 
 
