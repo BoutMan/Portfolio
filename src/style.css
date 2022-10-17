@@ -139,22 +139,21 @@ img{
 .parallax {
     position: relative;
     width: 100%;
-    height: 100%;  
+    height: 100%;
+    display: contents;  
 }
-#bg{
-   
-}
+
 .parallax #bg{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-   
+   height: 100%;
     background: url(images/Fragonard,_The_Swing2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: -6;
-   height: 609px; 
+
 }
 section{
     padding-left: 9vh;
@@ -179,7 +178,7 @@ section p{
 } 
 /*------------ END SCROLLBAR-----------*/
 
-/*------------MAIN-----------*/c
+/*------------MAIN-----------*/
 .main{
     color: #e6ecf0!important;
     padding: 2vh; 
@@ -191,12 +190,12 @@ section p{
 .Portfolio{
     font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
     position: relative;
-    top: -3vh;
+    top: 8vh;
     padding-left: 7.5vh;
     font-size: 4vh;
 }
 .and{
-    font-size: 8vh;position: relative;top: -10vh;
+    font-size: 8vh;position: relative;
 }
 .main h2{
     font-family: 'Migra Extrabold','Playfair Display SemiBold', serif;
@@ -207,7 +206,6 @@ section p{
 }
 .ETUDIANT {
     position: relative;
-    top: -10vh;
     font-size: 21vh;
     color: #ffffc2;
     font-family:'Bebas Neue' ;
@@ -216,7 +214,7 @@ section p{
 }
 .main_bio{
     position: relative;
-    top:-10vw;
+    top:-3vh;
     font-family: 'Bebas Neue', 'Migra Extrabold';   
     font-size: 5vh;    
     float: right;
@@ -248,14 +246,14 @@ button{
     font-family: 'Bebas Neue';
     font-size:3vh;
     position: relative;
-    top: 0; left: 155vh;  
+    top: 10vh; left: 155vh;  
     width: 10vw;
 }
 .arrow{
     position: relative;
     height: auto;
     width: 20vh;
-    top: 20vh; left: 168vh;
+    top: 30vh; left: 168vh;
     transform: rotate(-30deg);
 }
 .date{
@@ -273,7 +271,7 @@ button{
 .dispo{
     width: 20vw;
     position: relative;
-    left:61%;top: 14vh;
+    left:61%;top: 27vh;
     font-size: 2.5vh;
     right: auto;
     color: #e6ecf0;
@@ -368,15 +366,16 @@ button{
     font-family: 'Bebas Neue', 'Migra Extrabold';  
     position: relative;
     padding-left: 9vh;
-   
     height:113%;
     z-index: -2;
+    display: contents; 
 }
 .parallax2 #bg2{
      position: absolute;
-    top: 4vh;
-    width: 95.6%;
-    height: 96.5%;
+    
+    top: 250vh;
+    width: 100%;
+    height: 100%;
     background: url(images/frag4.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -574,7 +573,7 @@ top: -26vh;
 /*responsiv pour téléphone*/
 @media only screen and (max-width: 500px) {
     * {
-        outline: 1px solid #f00 !important;
+        /*outline: 1px solid #f00 !important;*/
       }
     body{
         width: auto;
@@ -633,7 +632,7 @@ height: 100%;*/
     font-size: 2vh;position: relative;top: -2vh;left: -4vh;
 }
 .dispo{
-    left:61%;top: 3vh;
+    left:61%;top: 6vh;
     font-size: 1vh;
 }
 
@@ -665,7 +664,7 @@ button{
 }
 .bio2{
     position: relative;
-    top: -70vh;
+    top: -28vh;
 }
 .dot {
     height: 60vh;
@@ -675,7 +674,7 @@ button{
 
   .projects{
     padding-top: 3vh;
-    position: relative;top: -70vh;
+    position: relative;top: -30vh;
     
 }
 .projects img{
@@ -687,6 +686,7 @@ button{
 }
 .project1{
     width: auto;
+    margin-top: -3VH;
 
 }
 .project2 h1{
@@ -701,10 +701,10 @@ button{
 
 .parallax2 #bg2{
     position: absolute;
-    top: 4vh;
-    width: 106.5VW;
+    top: 25vh;
+    width: 100%;
     height: 100%;
-    left: -10vh;
+   
 
 }
 
@@ -726,7 +726,7 @@ button{
 
 .interest{
     position: relative;
-    top: -60vh;
+    top: -35vh;
    text-transform: uppercase;
 
 }
@@ -761,8 +761,8 @@ button{
 
 
   .contact{
-    position: relative; left: -10vh;
-    top: -90vh;
+    position: relative; left: 0vh;
+    top: -70vh;
     }
 
 
@@ -774,24 +774,24 @@ button{
  
     .ligne2{
         position: relative;
-       left: 7vh;
+        left: 0vh;
          border-top: 1px solid #e6ecf0;
-     
          margin-top: -7vh;
-        
-         margin-left: 10vh;
+         margin-left: 15vh;
          margin-right: 0; 
-     
-        
-         font-size: 2vh;
+         font-size: 1vh;
      } 
 
      .merci{
         position: relative;
         font-size: 2vh;
         margin-right: 10vw;
+        left: 2vh;
+        width: 40vw;
     }
-    
+    .call_to_action{
+        opacity: 0;
+    }
 }
  
 @font-face{
