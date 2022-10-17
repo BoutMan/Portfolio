@@ -153,7 +153,6 @@ img{
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: -6;
-
 }
 section{
     padding-left: 9vh;
@@ -698,14 +697,15 @@ button{
     width: auto;
 
 }
-.parallax #bg{
-    
-}
+
 .parallax2 #bg2{
     position: absolute;
-    top: 25vh;
+    top: 45vh;
     width: 100%;
-    height: 100%;
+    height: 65%;
+}
+.parallax #bg{
+   height: 90%;
 }
 
 .testIt {
@@ -762,7 +762,7 @@ button{
 
   .contact{
     position: relative; left: 0vh;
-    top: -70vh;
+    top: -60vh;
     }
 
 
