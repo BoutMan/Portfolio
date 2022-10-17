@@ -698,14 +698,14 @@ button{
     width: auto;
 
 }
-
+.parallax #bg{
+    display: contents;
+}
 .parallax2 #bg2{
     position: absolute;
     top: 25vh;
     width: 100%;
     height: 100%;
-   
-
 }
 
 .testIt {
