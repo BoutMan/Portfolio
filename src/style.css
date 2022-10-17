@@ -580,9 +580,9 @@ top: -26vh;
     }
     .html{
         position: relative;
-min-width: 896px;
+/*min-width: 896px;
 min-height: 414px;
-height: 100%;
+height: 100%;*/
     }
   .ETUDIANT{
     font-size: 5vh;
